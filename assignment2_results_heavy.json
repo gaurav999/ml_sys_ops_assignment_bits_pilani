@@ -1,0 +1,34 @@
+{
+  "config": {
+    "n_samples": 600000,
+    "n_features": 256,
+    "epochs": 8,
+    "batch_size": 16384,
+    "base_lr": 0.1,
+    "warmup_epochs": 3,
+    "max_workers": 4
+  },
+  "results": [
+    {
+      "workers": 1,
+      "time_sec": 0.5913600921630859,
+      "accuracy": 0.9963766666666667,
+      "speedup_vs_seq": 1.0,
+      "acc_delta_vs_seq": 0.0
+    },
+    {
+      "workers": 2,
+      "time_sec": 7.768361330032349,
+      "accuracy": 0.996045,
+      "speedup_vs_seq": 0.07612417433222347,
+      "acc_delta_vs_seq": -0.00033166666666673006
+    },
+    {
+      "workers": 4,
+      "time_sec": 29.23256492614746,
+      "accuracy": 0.995255,
+      "speedup_vs_seq": 0.020229497262969763,
+      "acc_delta_vs_seq": -0.0011216666666666875
+    }
+  ]
+}
